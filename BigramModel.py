@@ -148,7 +148,7 @@ class AddOneSmoothingBigram(BigramModel):
         
         log_prob = 0
         
-        vocab = len(unigram_dic) # total number of words in the corpus
+        vocab = len(unigram_dic) # total number of unique words in the corpus
         
         for word in dic:
             if word in self.train_word:
