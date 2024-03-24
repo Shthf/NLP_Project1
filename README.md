@@ -15,7 +15,7 @@
 In this assignment, you will train several language models and will evaluate them on a test corpus. Two files are provided with this assignment:
 
 1. train.txt
-2. 2. test.txt
+2. test.txt
 
 Each file is a collection of texts, one sentence per line. train.txt contains about 100,000 sentences from the NewsCrawl corpus. You will use this corpus to train the language models. The test corpus test.txt is from the same domain and will be used to evaluate the language models that you trained.
 
