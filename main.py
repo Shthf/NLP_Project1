@@ -2,15 +2,15 @@ from UnigramModel import *
 from BigramModel import *
 
 
-train_path = "./Project/train-Spring2024.txt"
-test_path = "./Project/test.txt"
-sentence_path = "./Project/sentence.txt"
+train_path = "./train-Spring2024.txt"
+test_path = "./test.txt"
+sentence_path = "./sentence.txt"
 
-# train_path = "./Project/mini_train.txt"
-# test_path = "./Project/mini_test.txt"
-# sentence_path = "./Project/mini_sentence.txt"
+# train_path = "./mini_train.txt"
+# test_path = "./mini_test.txt"
+# sentence_path = "./mini_sentence.txt"
 
-output = open("./Project/output.txt", 'w')
+output = open("./output.txt", 'w')
 
 def addTags(file_name):
     """
