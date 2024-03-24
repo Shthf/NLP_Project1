@@ -101,7 +101,7 @@ For add-one-smoothing bigram model,
 
 
 Follow up with Q1.3.7
-The result I got for perplexity of test corpus under unigram model is really high. As told in the class, The lower the perplexity, the better the language model is. In this case, using unigram does not seem to be a good option.
+The result I got for perplexity of test corpus under unigram model is really high. The lower the perplexity, the better the language model is. In this case, using unigram does not seem to be a good option.
 
 The result for perplexity of test corpus under bigram model is undefined since there are words not seen in the training corpus.
 
