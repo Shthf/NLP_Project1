@@ -1,0 +1,3 @@
+Each file is a collection of texts , one sentence per line .
+train.txt contains about 100,000 sentences from the NewsCrawl corpus .
+The test corpus test.txt is from the same domain and will be used to evaluate the language models that you trained trained .

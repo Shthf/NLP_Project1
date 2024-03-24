@@ -1,0 +1,98 @@
+The <s> and </s> tags are successfully padded to the file ./Project/train-Spring2024.txt
+The <s> and </s> tags are successfully padded to the file ./Project/test.txt
+The <s> and </s> tags are successfully padded to the file ./Project/sentence.txt
+
+Q1.3.1
+How many word types (unique words) are there in the training corpus? Please include
+the end-of-sentence padding symbol </s> and the unknown token <unk>. Do not include
+the start of sentence padding symbol <s>.
+The answer is: 41738
+
+Q1.3.2
+How many word tokens are there in the training corpus? Do not include the start of
+sentence padding symbol <s>.
+The answer is: 2468210
+
+Q1.3.3
+What percentage of word tokens and word types in the test corpus did not occur in
+training (before you mapped the unknown words to <unk> in training and test data)?
+Please include the padding symbol </s> in your calculations. Do not include the
+start of sentence padding symbol <s>.
+The answer is: 
+The percentage of word types in test not occur in train is: 3.6057692307692304%
+The percentage of word tokens in test not occur in train is: 1.6612495485734922%
+
+Q1.3.4
+Now replace singletons in the training data with <unk> symbol and map words (in the
+test corpus) not observed in training to <unk>. What percentage of bigrams (bigram
+types and bigram tokens) in the test corpus did not occur in training (treat <unk> as
+a regular token that has been observed). Please include the padding symbol </s> in
+your calculations. Do not include the start of sentence padding symbol <s>.
+The answer is: 
+The percentage of bigram word types in test not occur in train is: 27.238493723849373%
+The percentage of bigram word tokens in test not occur in train is: 28.2393456736978%
+
+Q1.3.5
+Compute the log probability of the following sentence under the three models (ignore
+capitalization and pad each sentence as described above). Please list all of the
+parameters required to compute the probabilities and show the complete calculation.
+Which of the parameters have zero values under each model? Use log base 2 in your
+calculations. Map words not observed in the training corpus to the <unk> token.
+The answer is:
+For unigram model,
+The log probability for the word (<s>) is -4.682691269922203
+The log probability for the word (i) is -8.450963962476674
+The log probability for the word (look) is -12.032588480668233
+The log probability for the word (forward) is -12.403588495460756
+The log probability for the word (to) is -5.597321004705777
+The log probability for the word (hearing) is -13.584972612278131
+The log probability for the word (your) is -11.043218291645285
+The log probability for the word (reply) is -17.591892026217923
+The log probability for the word (.) is -4.868854680279238
+The log probability for the word (</s>) is -4.682691269922203
+The log probability for the word (<unk>) is -5.958233079301724
+The log probability of the sentence under unigram model is: -100.89701517287814
+For bigram modlel,
+The log probability for the word (('<s>', 'i')) is -5.639534583824631
+The log probability for the word (('i', 'look')) is -8.934477186273822
+The log probability for the word (('look', 'forward')) is -4.172280422440442
+The log probability for the word (('forward', 'to')) is -2.2448870591235344
+The log probability for the word (('to', 'hearing')) is -13.110048238932082
+The log probability for the word (('hearing', 'your')) is undefined
+The log probability for the word (('your', 'reply')) is undefined
+The log probability for the word (('reply', '.')) is undefined
+The log probability for the word (('.', '</s>')) is -0.08460143194821208
+The log probability of the sentence under bigram model is: undefined
+For add-one-smoothing bigram model,
+The log probability for the word (('<s>', 'i')) is -6.142052348726813
+The log probability for the word (('i', 'look')) is -11.582788837823436
+The log probability for the word (('look', 'forward')) is -10.240859462550432
+The log probability for the word (('forward', 'to')) is -8.707188259410588
+The log probability for the word (('to', 'hearing')) is -13.725046665121754
+The log probability for the word (('hearing', 'your')) is -15.349108415784546
+The log probability for the word (('your', 'reply')) is -15.349108415784546
+The log probability for the word (('reply', '.')) is -15.349108415784546
+The log probability for the word (('.', '</s>')) is -0.6451804614204726
+The log probability of the sentence under add-one-smoothing bigram model is: -97.09044128240711
+
+Q1.3.6
+Compute the perplexity of the sentence above under each of the models.
+The answer is:
+For unigram model,
+The perplexity of the sentence under unigram model is: 577.0113650399193
+For bigram modlel,
+The perplexity of the sentence under bigram model is: undefined
+For add-one-smoothing bigram model,
+The perplexity of the sentence under add-one-smoothing bigram model is: 1.000026204573375
+
+Q1.3.7
+Compute the perplexity of the entire test corpus under each of the models. Discuss
+the differences in the results you obtained.
+The answer is:
+For unigram model,
+The perplexity of the test corpus under unigram model is: 16655.76542932244
+For bigram modlel,
+The perplexity of the test corpus under bigram model is: undefined
+For add-one-smoothing bigram model,
+ The perplexity of the test corpus under add-one-smoothing bigram model is: 1.007997290448352
+<s> and </s> tags are successfully removed from the file ./Project/train-Spring2024.txt/n<s> and </s> tags are successfully removed from the file ./Project/test.txt/n<s> and </s> tags are successfully removed from the file ./Project/sentence.txt/n
