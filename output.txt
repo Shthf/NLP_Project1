@@ -95,4 +95,15 @@ For bigram modlel,
 The perplexity of the test corpus under bigram model is: undefined
 For add-one-smoothing bigram model,
  The perplexity of the test corpus under add-one-smoothing bigram model is: 1.007997290448352
-<s> and </s> tags are successfully removed from the file ./Project/train-Spring2024.txt/n<s> and </s> tags are successfully removed from the file ./Project/test.txt/n<s> and </s> tags are successfully removed from the file ./Project/sentence.txt/n
+<s> and </s> tags are successfully removed from the file ./Project/train-Spring2024.txt
+<s> and </s> tags are successfully removed from the file ./Project/test.txt
+<s> and </s> tags are successfully removed from the file ./Project/sentence.txt
+
+
+Follow up with Q1.3.7
+The result I got for perplexity of test corpus under unigram model is really high. As told in the class, The lower the perplexity, the better the language model is. In this case, using unigram does not seem to be a good option.
+
+The result for perplexity of test corpus under bigram model is undefined since there are words not seen in the training corpus.
+
+The result for perplexity of test corpus under add one smoothing bigram model is really ideal compared to ungram model result, and it is way better than unigram model.
+
